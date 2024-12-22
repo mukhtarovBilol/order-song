@@ -101,12 +101,13 @@ window.onclick = function (event) {
 
 var myForm = document.getElementById("myForm");
 
+
 myForm.addEventListener("submit", function(event) {
     event.preventDefault(); // Предотвращаем стандартное поведение формы
 
     var formData = new FormData(myForm);
 
-    fetch('./order.php', {
+    fetch('main.php', {
         method: 'POST',
         body: formData
     })

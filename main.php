@@ -12,12 +12,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $message = "Имя: $name\nТелефон: $phone\nПожелания: $wishes\nПакет: $package";
     mail($to, $subject, $message);
 
-    // Перенаправление на WhatsApp
-    $whatsappMessage = urlencode("Новый заказ!%0AИмя: $name%0AТелефон: $phone%0AПожелания: $wishes%0AПакет: $package");
-    $whatsappURL = "https://api.whatsapp.com/send?phone=79221111193&text=$whatsappMessage";
+    // // Перенаправление на WhatsApp
+    // $whatsappMessage = urlencode("Новый заказ!%0AИмя: $name%0AТелефон: $phone%0AПожелания: $wishes%0AПакет: $package");
+    // $whatsappURL = "https://api.whatsapp.com/send?phone=79221111193&text=$whatsappMessage";
 
-    // Перенаправление пользователя на WhatsApp
-    header("Location: $whatsappURL");
-    exit();
+    // // Перенаправление пользователя на WhatsApp
+    // header("Location: $whatsappURL");
+    // exit();
 }
 ?>
