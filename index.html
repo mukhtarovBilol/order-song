@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="nav__top">
+                <!-- <a href="" class="nav__logo">Песни на заказ</a> -->
+                <img src="./image/logo.png" alt="" class="nav__logo-image">
+                <div class="nav__top-desc">
+                    <!-- Эти элементы будут в мобильной версии внутри меню-бургера -->
+                    <div class="nav__top-mobile">
+                        <a href="" class="nav__top-link">+7 (922) 11111-93 </a>
+                        <a href="">
+                            <img src="./image/Telegram_logo.svg.webp" alt="" class="nav__top-image">
+                        </a>
+                        <a href="">
+                            <img src="./image/whatss-app.webp" alt="" class="nav__top-image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav__bottom">
+                <div class="nav__menu-toggle" id="menu-toggle">
+                    <span class="nav__menu-bar"></span>
+                    <span class="nav__menu-bar"></span>
+                    <span class="nav__menu-bar"></span>
+                </div>
+                <ul class="nav__list" id="nav-list">
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#examples" class="nav__link">Примеры работ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#how-to-order" class="nav__link">Как заказать</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about-us" class="nav__link">О нас</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#prices-services" class="nav__link">Цены и услуги</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#order-form" class="nav__link">Контакты</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#faq" class="nav__link nav-mobile-link-none">Часто задаваемые вопросы</a>
+                        <a href="#faq" class="nav__link nav-mobile-link">Часто задаваемые <br> вопросы</a>
+                    </li>
+                    <!-- Переносим контактные элементы сюда, чтобы они были внутри бургера -->
+                    <div class="nav__top-mobile-menu">
+                        <a href="" class="nav__top-link">+7 (922) 11111-93 </a>
+                        <div class="nav__top-mobile-menu-helper">
+                            <a href="">
+                                <img src="./image/Telegram_logo.svg.webp" alt="" class="nav__top-image">
+                            </a>
+                            <a href="">
+                                <img src="./image/whatss-app.webp" alt="" class="nav__top-image">
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <h1 class="header__title">Именная песня — лучший подарок на любой праздник!</h1>
+                <p class="header__txt">
+                    Подарите своим близким уникальные эмоции — песню, созданную специально для них!
+                    Именные поздравления, которые останутся в памяти навсегда. Быстро, легко и доступно!
+                </p>
+                <a href="#order-form" class="header__btn">Создайте песню своей мечты — начните прямо сейчас!</a>
+                <a href="#order-form" class="header__btn mobile-btn">Заказать</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="examples" class="examples">
+            <h2 class="examples__title">Примеры работ</h2>
+            <div class="examples__slider">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- Отзывы -->
+                        <div class="swiper-slide">
+                            <div class="example-card">
+                                🎵
+                                <div class="example-card__text">
+                                    <p class="example-card__review">"Я не ожидала, что подарок может быть настолько
+                                        особенным. Песня вызвала слёзы счастья у моей мамы!"</p>
+                                    <p class="example-card__author">— Анна, Москва</p>
+                                </div>
+                                <audio class="example-card__audio" controls>
+                                    <source src="path/to/song1.mp3" type="audio/mp3">
+                                    Ваш браузер не поддерживает аудио.
+                                </audio>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="example-card">
+                                🎧
+                                <div class="example-card__text">
+                                    <p class="example-card__review">"Это был лучший подарок на мой юбилей. Песня просто
+                                        потрясающая!"</p>
+                                    <p class="example-card__author">— Сергей, Санкт-Петербург</p>
+                                </div>
+                                <audio class="example-card__audio" controls>
+                                    <source src="path/to/song2.mp3" type="audio/mp3">
+                                    Ваш браузер не поддерживает аудио.
+                                </audio>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="example-card">
+                                🎵
+                                <div class="example-card__text">
+                                    <p class="example-card__review">"Это был лучший подарок на мой юбилей. Песня просто
+                                        потрясающая!"</p>
+                                    <p class="example-card__author">— Сергей, Санкт-Петербург</p>
+                                </div>
+                                <audio class="example-card__audio" controls>
+                                    <source src="path/to/song2.mp3" type="audio/mp3">
+                                    Ваш браузер не поддерживает аудио.
+                                </audio>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="example-card">
+                                🎧
+                                <div class="example-card__text">
+                                    <p class="example-card__review">"Это был лучший подарок на мой юбилей. Песня просто
+                                        потрясающая!"</p>
+                                    <p class="example-card__author">— Сергей, Санкт-Петербург</p>
+                                </div>
+                                <audio class="example-card__audio" controls>
+                                    <source src="path/to/song2.mp3" type="audio/mp3">
+                                    Ваш браузер не поддерживает аудио.
+                                </audio>
+                            </div>
+                        </div>
+
+                        <!-- Добавьте больше карточек по аналогии -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews">
+                <h2 class="reviews__title">Отзывы</h2>
+                <div class="reviews__slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p class="review">«Я не ожидала, что подарок может быть настолько особенным. Песня вызвала
+                                слёзы счастья у моей мамы!» — <strong>Анна, Москва</strong></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="review">«Моему мужу песня так понравилась, что он переслушивал её весь вечер!
+                                Спасибо за такой уникальный подарок!» — <strong>Елена, Санкт-Петербург</strong></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="review">«Я подарила песню подруге на свадьбу, и это был самый эмоциональный момент
+                                на торжестве!» — <strong>Ксения, Казань</strong></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="review">«Песня для нашей компании стала гимном, который вдохновляет команду.
+                                Отличная работа!» — <strong>Дмитрий, Новосибирск</strong></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="review">«Идеальный подарок для моего папы. Он был в восторге от персональной
+                                песни!» — <strong>Сергей, Омск</strong></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="review">«Я заказал песню для дочери на её день рождения. Она была в восторге, и
+                                все гости были потрясены!» — <strong>Александр, Краснодар</strong></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="review">«Срочный заказ был выполнен идеально, за один день. Спасибо за такую
+                                оперативность!» — <strong>Ольга, Екатеринбург</strong></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="review">«Наши друзья заказали песню на годовщину свадьбы, и это был лучший
+                                подарок! Теперь я тоже ваш клиент.» — <strong>Наталья, Ростов-на-Дону</strong></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="review">«Песня на английском для моего друга из-за границы была великолепной.
+                                Высший класс!» — <strong>Виктор, Калининград</strong></p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="review">«Вы сделали невозможное — создали песню, которая тронула сердце каждого
+                                гостя. Спасибо!» — <strong>Марина, Нижний Новгород</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="whyus" class="whyus">
+            <div class="container">
+                <h2 class="whyus__title">Почему к нам обратились уже более 5 000 клиентов?</h2>
+                <ul class="whyus__list">
+                    <li class="whyus__item">
+                        <div class="whyus__icon">🎤</div>
+                        <p class="whyus__text">Высочайшее качество. Мы работаем только с профессиональными музыкантами и
+                            вокалистами.</p>
+                    </li>
+                    <li class="whyus__item">
+                        <div class="whyus__icon">✨</div>
+                        <p class="whyus__text">Простота — наше всё. Заказ песни занимает всего несколько минут.</p>
+                    </li>
+                    <li class="whyus__item">
+                        <div class="whyus__icon">⏱️</div>
+                        <p class="whyus__text">Срочные заказы. Получите готовую песню всего за 24 часа.</p>
+                    </li>
+                    <li class="whyus__item">
+                        <div class="whyus__icon">🌟</div>
+                        <p class="whyus__text">Работа со звёздами. Мы пишем песни для знаменитостей шоу-бизнеса.</p>
+                    </li>
+                    <li class="whyus__item">
+                        <div class="whyus__icon">🌍</div>
+                        <p class="whyus__text">Работаем во всем мире. Мы принимаем заказы из любой точки планеты.</p>
+                    </li>
+                </ul>
+                <button class="whyus__button" onclick="openModal()">Оформить заказ прямо сейчас</button>
+            </div>
+        </section>
+        <section id="how-to-order" class="how-to-order">
+            <div class="container">
+                <h2 class="how-to-order__title">Ваш уникальный подарок в три простых шага:</h2>
+                <div class="how-to-order__steps">
+                    <div class="how-to-order__step">
+                        <h3 class="how-to-order__step-title">1. Заполните форму</h3>
+                        <p class="how-to-order__step-description">
+                            Расскажите о событии, выберите стиль песни и добавьте важные детали (имя, дата, пожелания).
+                        </p>
+                        <button class="how-to-order__button" onclick="openModal()">Оформить заказ</button>
+                    </div>
+                    <div class="how-to-order__step">
+                        <h3 class="how-to-order__step-title">2. Обсудите детали</h3>
+                        <p class="how-to-order__step-description">
+                            Мы свяжемся с вами, чтобы уточнить все нюансы.
+                        </p>
+                        <button class="how-to-order__button" onclick="openModal()">Оформить заказ</button>
+                    </div>
+                    <div class="how-to-order__step">
+                        <h3 class="how-to-order__step-title">3. Получите готовую песню!</h3>
+                        <p class="how-to-order__step-description">
+                            Мы создадим трек, который тронет сердце каждого.
+                        </p>
+                        <button class="how-to-order__button" onclick="openModal()">Оформить заказ</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about-us" class="about-us">
+            <div class="container">
+                <h2 class="about-us__title">Кто мы?</h2>
+                <p class="about-us__description">
+                    Мы — команда профессионалов, которые превращают слова в музыку. Композиторы, текстовики и вокалисты
+                    работают вместе, чтобы создать песню, которая станет ярким акцентом любого праздника.
+                </p>
+                <div class="about-us__team">
+                    <div class="about-us__team-member">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAMAAzAMBIgACEQEDEQH/xAAbAAEBAQEBAAMAAAAAAAAAAAAAAQUHBgIDBP/EADcQAQABAgQBBwkIAwAAAAAAAAABAgMEBQYR0RZRYYGRk6ESFSExVVZ0scETFCIyM0FCcSNSov/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDsQAAAAAAAAAAAAAAAAAAAAAAACooIAAAAAAAAAAAAAAAAAAAAAAAAqKCAAAAAAAAAAAAAAAAAAAAAAAAKiggAAAAAAAAAAAAAAAAAAAAAAACooIAAAAAAACbwrE1PexVujAWsJi7mHm/iabdVdERvETD4+ZMy94sb3dHAG6MLzJmXvFje7o4HmTMveLG93RwBujC8yZl7xY3u6OB5kzLfblFje7o4A3RheZMy94sb3dHA8yZl7xY3u6OAN39t9j93lsww+ZZXdwVyc5xOIpuYqi3VbuUUxExP9PUgAAAAAAKiggAAAAAAAMPU/wCrlHx1HyluMPU/6uUfHUfKW4APoxuLsYHDV4jE3Yt26I3mqfo83ketMNmOZ3MJftxh6a6p+71T/LonmkHq3lNTavpyjG/dMNYi9dpiPtJqnaI6Hq+qXi9V6Pv5nmM43AXbdNVe32lF2do35wb+nc6tZ3gZxFumaKqavJromfVLVY2lskjI8vqs1XIuXrlXlV1R6t+Zsgw9U/ky74639W5PrYeqfyZd8db+rcn1gAAAAAAKiggAAAAAAAMPU/6uUfHUfKWtjMVYwWGqxGIuRRapjeapYurr9vDU5ZfvT5Nq3i6aqquiIl4PVOor2eYnyaZm3hKJ/Bb+s9IJqjUV7PMV5Mb0YSif8dv1dcsOnfn2nffeOdNlB0PReqoxNFGXZlciLsRtauz/ADjmnpe2cHiZjbyZ2mJ3ieZ6G9rDMLuTRgPK2uflqvRP4po5gbOs9WTVNzLsruTt6r16mf8Amni/VozVcYqLeX5nXEXo9Fu9P8o5p6XOv79JG8TvT6Jj0wDrmqJ3oy34639W7LmuX6iu5lay3AYzeq/axduabv8AtEc/S6VPy9AAAAAAACooIAAAAAAADzWvMvxeY5VatYLD13q6b0TMU/tGzwfJbPPZl7w4uwTET64XqjsBx7ktnvsy/wCHE5LZ77Mv+HF2HqjsOqOwHHuS+e+zL/hxOS2e+zL/AIcXYeqOw6o7Ace5LZ77Mv8AhxOS2e+zL/hxdh6o7DqjsByrJdOZxh83wd69l92i3Repqqqnb0Ru6qAAAAAAACooIAAAAAAAAAAAAAAAAAAAAAAAAqKCAAAAAAAAAAAAAAAAAAAAAAAAKiggAAAAAAAAAAAAAAAAAAAAAAACooIAAAAAAAAAAAAAAAAAAAAAAAAqKD//2Q=="
+                            alt="Композитор" class="about-us__team-photo">
+                        <p class="about-us__team-name">Иван Иванов</p>
+                        <p class="about-us__team-role">Композитор</p>
+                    </div>
+                    <div class="about-us__team-member">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAMAAzAMBIgACEQEDEQH/xAAbAAEBAQEBAAMAAAAAAAAAAAAAAQUHBgIDBP/EADcQAQABAgQBBwkIAwAAAAAAAAABAgMEBQYR0RZRYYGRk6ESFSExVVZ0scETFCIyM0FCcSNSov/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDsQAAAAAAAAAAAAAAAAAAAAAAACooIAAAAAAAAAAAAAAAAAAAAAAAAqKCAAAAAAAAAAAAAAAAAAAAAAAAKiggAAAAAAAAAAAAAAAAAAAAAAACooIAAAAAAACbwrE1PexVujAWsJi7mHm/iabdVdERvETD4+ZMy94sb3dHAG6MLzJmXvFje7o4HmTMveLG93RwBujC8yZl7xY3u6OB5kzLfblFje7o4A3RheZMy94sb3dHA8yZl7xY3u6OAN39t9j93lsww+ZZXdwVyc5xOIpuYqi3VbuUUxExP9PUgAAAAAAKiggAAAAAAAMPU/wCrlHx1HyluMPU/6uUfHUfKW4APoxuLsYHDV4jE3Yt26I3mqfo83ketMNmOZ3MJftxh6a6p+71T/LonmkHq3lNTavpyjG/dMNYi9dpiPtJqnaI6Hq+qXi9V6Pv5nmM43AXbdNVe32lF2do35wb+nc6tZ3gZxFumaKqavJromfVLVY2lskjI8vqs1XIuXrlXlV1R6t+Zsgw9U/ky74639W5PrYeqfyZd8db+rcn1gAAAAAAKiggAAAAAAAMPU/6uUfHUfKWtjMVYwWGqxGIuRRapjeapYurr9vDU5ZfvT5Nq3i6aqquiIl4PVOor2eYnyaZm3hKJ/Bb+s9IJqjUV7PMV5Mb0YSif8dv1dcsOnfn2nffeOdNlB0PReqoxNFGXZlciLsRtauz/ADjmnpe2cHiZjbyZ2mJ3ieZ6G9rDMLuTRgPK2uflqvRP4po5gbOs9WTVNzLsruTt6r16mf8Amni/VozVcYqLeX5nXEXo9Fu9P8o5p6XOv79JG8TvT6Jj0wDrmqJ3oy34639W7LmuX6iu5lay3AYzeq/axduabv8AtEc/S6VPy9AAAAAAACooIAAAAAAADzWvMvxeY5VatYLD13q6b0TMU/tGzwfJbPPZl7w4uwTET64XqjsBx7ktnvsy/wCHE5LZ77Mv+HF2HqjsOqOwHHuS+e+zL/hxOS2e+zL/AIcXYeqOw6o7Ace5LZ77Mv8AhxOS2e+zL/hxdh6o7DqjsByrJdOZxh83wd69l92i3Repqqqnb0Ru6qAAAAAAACooIAAAAAAAAAAAAAAAAAAAAAAAAqKCAAAAAAAAAAAAAAAAAAAAAAAAKiggAAAAAAAAAAAAAAAAAAAAAAACooIAAAAAAAAAAAAAAAAAAAAAAAAqKD//2Q=="
+                            alt="Вокалист" class="about-us__team-photo">
+                        <p class="about-us__team-name">Мария Петрова</p>
+                        <p class="about-us__team-role">Вокалистка</p>
+                    </div>
+                    <div class="about-us__team-member">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAMAAzAMBIgACEQEDEQH/xAAbAAEBAQEBAAMAAAAAAAAAAAAAAQUHBgIDBP/EADcQAQABAgQBBwkIAwAAAAAAAAABAgMEBQYR0RZRYYGRk6ESFSExVVZ0scETFCIyM0FCcSNSov/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDsQAAAAAAAAAAAAAAAAAAAAAAACooIAAAAAAAAAAAAAAAAAAAAAAAAqKCAAAAAAAAAAAAAAAAAAAAAAAAKiggAAAAAAAAAAAAAAAAAAAAAAACooIAAAAAAACbwrE1PexVujAWsJi7mHm/iabdVdERvETD4+ZMy94sb3dHAG6MLzJmXvFje7o4HmTMveLG93RwBujC8yZl7xY3u6OB5kzLfblFje7o4A3RheZMy94sb3dHA8yZl7xY3u6OAN39t9j93lsww+ZZXdwVyc5xOIpuYqi3VbuUUxExP9PUgAAAAAAKiggAAAAAAAMPU/wCrlHx1HyluMPU/6uUfHUfKW4APoxuLsYHDV4jE3Yt26I3mqfo83ketMNmOZ3MJftxh6a6p+71T/LonmkHq3lNTavpyjG/dMNYi9dpiPtJqnaI6Hq+qXi9V6Pv5nmM43AXbdNVe32lF2do35wb+nc6tZ3gZxFumaKqavJromfVLVY2lskjI8vqs1XIuXrlXlV1R6t+Zsgw9U/ky74639W5PrYeqfyZd8db+rcn1gAAAAAAKiggAAAAAAAMPU/6uUfHUfKWtjMVYwWGqxGIuRRapjeapYurr9vDU5ZfvT5Nq3i6aqquiIl4PVOor2eYnyaZm3hKJ/Bb+s9IJqjUV7PMV5Mb0YSif8dv1dcsOnfn2nffeOdNlB0PReqoxNFGXZlciLsRtauz/ADjmnpe2cHiZjbyZ2mJ3ieZ6G9rDMLuTRgPK2uflqvRP4po5gbOs9WTVNzLsruTt6r16mf8Amni/VozVcYqLeX5nXEXo9Fu9P8o5p6XOv79JG8TvT6Jj0wDrmqJ3oy34639W7LmuX6iu5lay3AYzeq/axduabv8AtEc/S6VPy9AAAAAAACooIAAAAAAADzWvMvxeY5VatYLD13q6b0TMU/tGzwfJbPPZl7w4uwTET64XqjsBx7ktnvsy/wCHE5LZ77Mv+HF2HqjsOqOwHHuS+e+zL/hxOS2e+zL/AIcXYeqOw6o7Ace5LZ77Mv8AhxOS2e+zL/hxdh6o7DqjsByrJdOZxh83wd69l92i3Repqqqnb0Ru6qAAAAAAACooIAAAAAAAAAAAAAAAAAAAAAAAAqKCAAAAAAAAAAAAAAAAAAAAAAAAKiggAAAAAAAAAAAAAAAAAAAAAAACooIAAAAAAAAAAAAAAAAAAAAAAAAqKD//2Q=="
+                            alt="Текстовик" class="about-us__team-photo">
+                        <p class="about-us__team-name">Дмитрий Сидоров</p>
+                        <p class="about-us__team-role">Текстовик</p>
+                    </div>
+                </div>
+                <div class="about-us__advantages">
+                    <h3 class="about-us__advantages-title">Наши преимущества:</h3>
+                    <ul class="about-us__advantages-list">
+                        <li class="about-us__advantages-item">Уникальные тексты и мелодии</li>
+                        <li class="about-us__advantages-item">Быстрое выполнение — от 3 дней</li>
+                        <li class="about-us__advantages-item">Полная персонализация: от стиля до слов</li>
+                    </ul>
+                </div>
+                <button class="about-us__cta-button" onclick="openModal()">Доверьтесь нам и получите уникальную
+                    песню</button>
+            </div>
+        </section>
+        <section id="prices-services" class="prices-services">
+            <div class="container">
+                <h2 class="prices-services__title">Прозрачные цены — уникальный результат.</h2>
+                <p class="prices-services__description">
+                    Каждый подарок — это инвестиция в эмоции. Выберите подходящий пакет:
+                </p>
+
+                <!-- Таблица с пакетами для десктопа -->
+                <div class="prices-services__table-container">
+                    <table class="prices-services__table">
+                        <thead>
+                            <tr>
+                                <th>Пакет</th>
+                                <th>Описание</th>
+                                <th>Цена</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Стандарт</td>
+                                <td>Именная песня (2 минуты)</td>
+                                <td>от 5 000 руб.</td>
+                            </tr>
+                            <tr>
+                                <td>Премиум</td>
+                                <td>Полноценная песня с профессиональной записью (3–4 минуты)</td>
+                                <td>от 10 000 руб.</td>
+                            </tr>
+                            <tr>
+                                <td>VIP</td>
+                                <td>Композиция — от 25 000 руб.</td>
+                                <td>от 25 000 руб.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Карточки с пакетами для мобильной версии -->
+                <div class="prices-services__cards-container">
+                    <div class="prices-services__card">
+                        <h3 class="prices-services__card-title">Стандарт</h3>
+                        <p class="prices-services__card-description">Именная песня (2 минуты)</p>
+                        <p class="prices-services__card-price">от 5 000 руб.</p>
+                        <button class="prices-services__button">Узнать подробнее</button>
+                    </div>
+                    <div class="prices-services__card">
+                        <h3 class="prices-services__card-title">Премиум</h3>
+                        <p class="prices-services__card-description">Полноценная песня с профессиональной записью (3–4
+                            минуты)</p>
+                        <p class="prices-services__card-price">от 10 000 руб.</p>
+                        <button class="prices-services__button">Узнать подробнее</button>
+                    </div>
+                    <div class="prices-services__card">
+                        <h3 class="prices-services__card-title">VIP</h3>
+                        <p class="prices-services__card-description">Композиция — от 25 000 руб.</p>
+                        <p class="prices-services__card-price">от 25 000 руб.</p>
+                        <button class="prices-services__button">Узнать подробнее</button>
+                    </div>
+                </div>
+
+                <!-- Акция -->
+                <div class="prices-services__promo">
+                    <h3 class="prices-services__promo-title">Скидка 50% только сейчас!</h3>
+                    <p class="prices-services__promo-description">
+                        Таймер уже запущен! У вас есть 30 минут, чтобы заказать уникальную песню со скидкой 50%.
+                        Сделайте
+                        праздник незабываемым, подарив близким песню, созданную специально для них!
+                    </p>
+                    <div class="prices-services__timer" id="timer">
+                        <script src="//megatimer.ru/get/79271cceb802c09013517bd32e8bb2cd.js"></script>
+                    </div>
+                    <div class="for-mobile">
+                        <script src="//megatimer.ru/get/79271cceb802c09013517bd32e8bb2cd.js"></script>
+                    </div>
+                    <button class="prices-services__promo-button" onclick="openModal()">Не упустите момент! Оформите
+                        заказ прямо сейчас и
+                        получите
+                        потрясающую скидку</button>
+                    <button class="prices-services__promo-button  mobile-btn" onclick="openModal()">Оформить</button>
+                </div>
+            </div>
+        </section>
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2 class="faq__title">Ваши вопросы — наши ответы</h2>
+                <p class="faq__description">
+                    Мы собрали ответы на самые популярные вопросы, чтобы сделать процесс заказа ещё проще.
+                </p>
+
+                <!-- Аккордеон -->
+                <div class="faq__accordion">
+                    <!-- Вопрос 1 -->
+                    <button class="faq__question">Сколько времени занимает создание песни?</button>
+                    <div class="faq__answer">
+                        <p>От 3 до 7 дней, в зависимости от сложности заказа.</p>
+                    </div>
+
+                    <!-- Вопрос 2 -->
+                    <button class="faq__question">Можно ли выбрать стиль музыки?</button>
+                    <div class="faq__answer">
+                        <p>Да, мы работаем в разных жанрах — от поп-музыки до романтической баллады.</p>
+                    </div>
+
+                    <!-- Вопрос 3 -->
+                    <button class="faq__question">Как я получу готовую песню?</button>
+                    <div class="faq__answer">
+                        <p>Мы отправим вам файл в удобном формате по email или мессенджеру.</p>
+                    </div>
+
+                    <!-- Вопрос 4 -->
+                    <button class="faq__question">Можно ли внести изменения в текст песни?</button>
+                    <div class="faq__answer">
+                        <p>Конечно! Мы учтём ваши пожелания на этапе согласования.</p>
+                    </div>
+
+                    <!-- Вопрос 5 -->
+                    <button class="faq__question">Как происходит оплата?</button>
+                    <div class="faq__answer">
+                        <p>Вы можете оплатить картой, через онлайн-банкинг или другим удобным способом.</p>
+                    </div>
+
+                    <!-- Вопрос 6 -->
+                    <button class="faq__question">Можно ли заказать песню срочно?</button>
+                    <div class="faq__answer">
+                        <p>Да, у нас есть услуга экспресс-заказа — от 24 часов.</p>
+                    </div>
+
+                    <!-- Вопрос 7 -->
+                    <button class="faq__question">Работаете ли вы с корпоративными заказами?</button>
+                    <div class="faq__answer">
+                        <p>Да, мы создаём песни для компаний, мероприятий и рекламных кампаний.</p>
+                    </div>
+
+                    <!-- Вопрос 8 -->
+                    <button class="faq__question">Предоставляете ли вы текст песни?</button>
+                    <div class="faq__answer">
+                        <p>Да, текст входит в стоимость заказа.</p>
+                    </div>
+
+                    <!-- Вопрос 9 -->
+                    <button class="faq__question">Могу ли я заказать видеоклип?</button>
+                    <div class="faq__answer">
+                        <p>Да, мы предлагаем услугу создания видеоклипа на вашу песню.</p>
+                    </div>
+
+                    <!-- Вопрос 10 -->
+                    <button class="faq__question">Как я могу связаться с вами для консультации?</button>
+                    <div class="faq__answer">
+                        <p>Вы можете написать нам в WhatsApp или позвонить по указанному телефону.</p>
+                    </div>
+                </div>
+
+                <button class="faq__additional-question" onclick="openModal()">Задать дополнительный вопрос</button>
+            </div>
+        </section>
+        <section id="order-form" class="contacts">
+            <div class="container">
+                <h2 class="contacts__title">Свяжитесь с нами</h2>
+                <p class="contacts__description">
+                    Мы всегда на связи, чтобы ответить на ваши вопросы и принять заказ.
+                </p>
+
+                <!-- Контактная информация -->
+                <div class="contacts__info">
+                    <p><strong>Телефон:</strong> <a href="tel:+79221111193" class="contacts__link">+7 (922) 11111-93</a>
+                    </p>
+                    <p><strong>Email:</strong> <a href="mailto:info@mlemon.ru" class="contacts__link">info@mlemon.ru</a>
+                    </p>
+                    <p><strong>WhatsApp/Telegram:</strong> <a href="https://wa.me/79221111193" class="contacts__link">+7
+                            (922) 11111-93</a></p>
+                </div>
+
+                <!-- Форма для отправки вопроса -->
+                <form action="" id="myForm" class="contacts__form">
+                    <label for="name" class="contacts__form-label">Ваше имя</label>
+                    <input type="text" id="name" name="name" placeholder="Введите ваше имя" class="contacts__form-input"
+                        required>
+
+                    <label for="email" class="contacts__form-label">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Введите ваш email"
+                        class="contacts__form-input" required>
+
+                    <label for="message" class="contacts__form-label">Ваш вопрос</label>
+                    <textarea id="message" name="message" placeholder="Введите ваш вопрос"
+                        class="contacts__form-textarea" required></textarea>
+
+                    <button type="submit" class="contacts__form-button">Отправить</button>
+                </form>
+            </div>
+        </section>
+        <section id="blog" class="blog">
+            <div class="container">
+                <h2 class="blog__title">Наш блог</h2>
+                <div class="blog__widget-container">
+                    <iframe id="preview" style="border:0px; box-shadow: 0 0 16px 3px rgba(0,0,0,.2);"
+                        src="https://xn--r1a.website/s/pesnya_online" width="100%" height="500px">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__contact-info">
+                    <p class="footer__phone">+7 (922) 111 11-93</p>
+                    <p class="footer__address">Москва Сити, Башня Федерация, <br> Пресненская Набережная, 12 эт. 3</p>
+                </div>
+
+                <div class="footer__links">
+                    <ul class="footer__list">
+                        <li><a href="https://mlemon.ru/партнерам" class="footer__link">Партнёрам</a></li>
+                        <li><a href="https://mlemon.ru/звезды" class="footer__link">Для знаменитостей</a></li>
+                        <li><a href="https://mlemon.ru/франшиза" class="footer__link">Франшиза</a></li>
+                    </ul>
+                </div>
+                <ul class="footer__list">
+                    <li><a href="https://mlemon.ru/политика" class="footer__link">Политика конфиденциальности</a></li>
+                    <li><a href="https://mlemon.ru/политика" class="footer__link">Обработка персональных данных</a></li>
+                    <li><a href="https://mlemon.ru/договор" class="footer__link">Договор оферта</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__social">
+                <a href="https://vk.com/" target="_blank" class="footer__social-link">
+                    <img src="./image/vk.png" alt="VK" class="footer__social-icon">
+                </a>
+                <a href="t.me/pesnya_online" target="_blank" class="footer__social-link">
+                    <img src="./image/Telegram_logo.svg.webp" alt="Telegram" class="footer__social-icon">
+                </a>
+                <a href="https://api.whatsapp.com/send/?phone=79221111193" target="_blank" class="footer__social-link">
+                    <img src="./image/whatss-app.webp" alt="WhatsApp" class="footer__social-icon">
+                </a>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">© Песни на заказ, 2024. ООО «Песни», ИНН 8565776567, ОГРН 8756767677676.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно -->
+    <div class="modal" id="orderModal">
+        <div class="modal__content">
+            <span class="modal__close" id="closeModal">&times;</span>
+            <h2 class="modal__title">Оформление заказа</h2>
+            <form class="modal__form" id="myForm" method="POST" action="">
+                <div class="form__group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                </div>
+
+                <div class="form__group">
+                    <label for="phone">Ваш номер телефона</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Введите ваш номер" required>
+                </div>
+
+                <div class="form__group">
+                    <label for="wishes">Пожелания</label>
+                    <textarea id="wishes" name="wishes" placeholder="Введите ваши пожелания" rows="4"
+                        required></textarea>
+                </div>
+
+                <div class="form__group">
+                    <label for="package">Выберите пакет</label>
+                    <select id="package" name="package" required>
+                        <option value="standard">Стандарт — 5 000 руб.</option>
+                        <option value="premium">Премиум — 10 000 руб.</option>
+                        <option value="vip">VIP — от 25 000 руб.</option>
+                    </select>
+                </div>
+
+                <!-- Автоматическое согласие с политикой конфиденциальности -->
+                <div class="form__group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="privacyPolicy" name="privacyPolicy" checked disabled>
+                        <span>
+                            Я согласен(на) с <a href="https://mlemon.ru/политика" target="_blank">политикой
+                                конфиденциальности</a>
+                        </span>
+                    </label>
+                </div>
+
+                <button type="submit" class="form__submit">Оформить заказ</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
